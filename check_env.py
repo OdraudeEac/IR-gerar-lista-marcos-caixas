@@ -13,9 +13,9 @@ from pathlib import Path
 def check_python():
     """Verifica versão do Python."""
     if sys.version_info < (3, 9):
-        print(f"❌ Python 3.9+ necessário (actual: {sys.version})")
+        print(f"[FALHA] Python 3.9+ necessário (actual: {sys.version})")
         return False
-    print(f"✓ Python {sys.version.split()[0]}")
+    print(f"[OK] Python {sys.version.split()[0]}")
     return True
 
 
@@ -25,11 +25,11 @@ def check_package(name, import_name=None):
         import_name = name
     try:
         __import__(import_name)
-        print(f"✓ {name}")
+        print(f"[OK] {name}")
         return True
     except ImportError:
-        print(f"❌ {name} não instalado")
-        print(f"   Instalar com: pip install {name}")
+        print(f"[FALHA] {name} não instalado")
+        print(f"        Instalar com: pip install {name}")
         return False
 
 
@@ -37,10 +37,10 @@ def check_font():
     """Verifica se Calibri está instalado."""
     fonts_path = Path(r"C:\Windows\Fonts\calibri.ttf")
     if fonts_path.exists():
-        print("✓ Calibri instalado")
+        print("[OK] Calibri instalado")
         return True
-    print("❌ Calibri não encontrado")
-    print("   Instalar via Windows Update ou Adobe Creative Suite")
+    print("[FALHA] Calibri não encontrado")
+    print("        Instalar via Windows Update ou Adobe Creative Suite")
     return False
 
 
@@ -49,9 +49,9 @@ def check_dotm():
     dotm_path = Path(__file__).parent / "Listagem Global de Pontos de Acesso.dotm"
     if dotm_path.exists():
         size_kb = dotm_path.stat().st_size / 1024
-        print(f"✓ Template .dotm ({size_kb:.1f} KB)")
+        print(f"[OK] Template .dotm ({size_kb:.1f} KB)")
         return True
-    print("❌ Template 'Listagem Global de Pontos de Acesso.dotm' não encontrado")
+    print("[FALHA] Template 'Listagem Global de Pontos de Acesso.dotm' não encontrado")
     return False
 
 
@@ -74,10 +74,10 @@ def main():
     print(f"Resultado: {passed}/{total}")
     
     if passed == total:
-        print("✓ Ambiente OK! Pronto para usar.")
+        print("[OK] Ambiente OK! Pronto para usar.")
         return 0
     else:
-        print("❌ Corrigir os erros acima antes de continuar.")
+        print("[FALHA] Corrigir os erros acima antes de continuar.")
         return 1
 
 
