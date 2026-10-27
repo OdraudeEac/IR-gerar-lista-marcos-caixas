@@ -1,0 +1,40 @@
+# Ficheiros ignorados no controlo de versão
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outputs
+*.pdf
+*.zip
+test_output/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dados sensíveis
+.env
+secrets.json
+
+# Relatórios XLS (ficheiros podem ser grandes)
+# Descomentar se quiser ignorar:
+# *.xls
+# *.xlsx
