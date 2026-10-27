@@ -1,0 +1,57 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║              PULL REQUEST - QUICK START                           ║
+║              Gerador de Lista de Marcos e Caixas                  ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+
+📂 LOCALIZAÇÃO
+  C:\Users\atos91\Desktop\APPs\IR\gerar-lista-marcos-caixas
+
+
+📋 BRANCHES
+  master .......................... Código principal (7 commits)
+  feature/add-marcos-caixas-pdf-generator ... PR pronta (2 commits)
+
+
+🚀 FAZER A PR EM 4 PASSOS
+════════════════════════════════════════════════════════════════════
+
+PASSO 1: Ativar branch feature
+  git checkout feature/add-marcos-caixas-pdf-generator
+
+PASSO 2: Fazer push
+  git push -u origin feature/add-marcos-caixas-pdf-generator
+  (precisa de autenticação GitHub)
+
+PASSO 3: Criar PR no GitHub
+  https://github.com/CorreiosPortugal/pt.ctt.ir/pulls
+  Clicar: "New Pull Request"
+
+PASSO 4: Preencher PR
+  Base: main (pt.ctt.ir)
+  Compare: feature/add-marcos-caixas-pdf-generator
+  Descrição: Copiar conteúdo de PULL_REQUEST_TEMPLATE.md
+
+
+📖 GUIAS DISPONÍVEIS
+  FAZER_PR.md ....................... Instruções passo-a-passo completas
+  PULL_REQUEST_TEMPLATE.md ........... Descrição pronta para copiar
+  INDEX.md ........................... Mapa de documentação
+  README.md .......................... Overview técnico
+
+
+✓ STATUS
+  Código: Funcional e testado
+  Documentação: Completa
+  Git: Versionado e pronto
+  Segurança: Sem dados sensíveis
+  Status: PRONTO PARA GITHUB
+
+
+════════════════════════════════════════════════════════════════════
+Data: 27 de outubro de 2026
+Versão: 1.1
+Status: ✓ PR PRONTA
+════════════════════════════════════════════════════════════════════
